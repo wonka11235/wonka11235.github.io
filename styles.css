@@ -1,0 +1,112 @@
+body {
+  background-color: #68819a;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 100vh;
+}
+
+.ProfilePic {
+  height: 100%;
+  object-fit: fill;
+  float: left;
+  width: 100%;
+}
+
+.flex-container {
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cardOne {
+  height: 30vh;
+}
+
+.cardTwo {
+  height: 70vh;
+}
+
+h1 {
+  text-align: right;
+  font-family: "Merriwweather", serif;
+  font-size: 2rem;
+  font-weight: bold;
+  padding-right: 3%;
+}
+
+.aboutMe {
+  font-size: 3rem;
+  text-align: right;
+  font-family: "Karla", sans-serif;
+  font-weight: 100;
+  padding-right: 3%;
+  margin-top: -3%;
+}
+
+.moreAbout {
+  text-align: right;
+  font-family: "Karla", sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
+  padding-right: 4%;
+  padding-left: 3%;
+  margin-top: -6%;
+}
+
+.links {
+  text-align: right;
+  padding-right: 3%;
+  font-family: "Karla", sans-serif;
+  font-weight: 100;
+  font-size: 1.5rem;
+}
+
+.fa-instagram {
+  color: white;
+}
+
+.fa-linkedin {
+  color: white;
+}
+
+.fa-github {
+  color: white;
+}
+
+.fa-linkedin:hover {
+  color: #c7622b;
+}
+
+.fa-instagram:hover {
+  color: #c7622b;
+}
+
+.fa-github:hover {
+  color: #c7622b;
+}
+
+.fa-file {
+  color: white;
+}
+
+.fa-file:hover {
+  color: #c7622b;
+}
+@media (max-width: 800px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .cardOne {
+    display: none;
+  }
+  .moreAbout {
+    margin-top: -2%;
+  }
+}
